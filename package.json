@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "tsc",
+    "build": "parcel build index.html && cp -r img thumb dist/",
     "watch": "parcel serve index.html"
   },
   "author": "",
