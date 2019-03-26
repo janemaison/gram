@@ -37,9 +37,11 @@ class App extends React.PureComponent<{}, {items: Item[], sel?:number, hov?: num
                 <img className='hero' src={this._getImgUrl(item)} />
                 <div className='buy'>
                     <div>
-                    <strong>{item.color}</strong> {item.brand} {item.year}
+                        <strong>{item.color}</strong> {item.brand} {item.year}
                     </div>
-                    <a target="_blank" href="https://google.com">${item.price}</a>
+                    <div>
+                        ${item.price} on <a target="_blank" href="https://google.com">insta</a>
+                    </div>
                 </div>
                 <div className='thumbs'>
                     {items.map((i, ix) => (
